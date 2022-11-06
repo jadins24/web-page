@@ -1,0 +1,686 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family: sans-serif;
+}
+.header{
+	
+    position:fixed ;
+	top:0;
+    width:100%;
+    margin: auto;
+	z-index:1;
+    background: rgba(0, 0, 0, 0.8);
+}
+.nav{
+	
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+	font-weight:bold;
+    justify-content: space-between;
+
+}
+.nav h2{
+	color:white;
+	padding: 22px 0;
+}
+.nav li {
+	color:white;
+	padding: 25px 37px 0px 0px;
+    display: inline-block;
+	position:relative;
+}
+.nav  hr {
+	width:0px;
+	border:none;
+}
+.nav a:hover+hr{
+	z-index:1;
+	width:60%;
+	border:1px solid white;
+	transition: 300ms;
+    visibility: visible;
+}
+.nav ul{
+	display:flex;
+	
+}
+.home{
+	width:100%;
+	height:100vh;
+	background-size: cover;
+	background-image:url(../img/bg.jpg);
+	color:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.home-content-text{
+	text-align:center;
+     
+	
+}
+.about{
+		width:100%;
+
+	padding: 40px 0;
+	background-color:white;
+	
+
+}
+.about-container{
+	width:80%;
+	height:auto;
+	margin:0 auto;
+	display:flex;
+	justify-content: space-around;
+	box-shadow: 0px 0px 3px gray;
+	padding: 30px 0;
+}
+.about-container-1{
+	width:45%;
+	
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	
+	
+}
+.about-container-img{
+	width:30%
+}
+.about-container-intro{
+	width:60%
+}
+
+.about-container-intro  p{
+	font-size:18px;
+	padding:10px 0;
+	color:#6c757d;
+	
+}
+.about-container-intro   span{
+	 font-weight: bold;
+	 color:;
+	
+}
+.about-container-skills{
+	width:100%;
+	margin: 20px 0;
+}
+.about-container-skills h2{
+	padding:15px 0;
+	
+}
+.about-container-skills progress{
+	
+	width:100%;
+	padding:15px 0;
+	
+	
+}
+.about-container-2{
+	width:45%;
+	
+
+}
+.about-container-2 h2{
+	position:relative;
+	padding-bottom:10px;
+	
+}
+.about-container-2 h2::after{
+	position:absolute;
+	content:"";
+	border-bottom: 3px solid blue;
+	width:15%;
+	top:30px;
+	left:0px;
+	
+}
+.about-container-2 p{
+	line-height:1.5;
+	    font-size: 1.25rem;
+    font-weight: 300;
+	padding-bottom:20px;
+		color:#6c757d;
+	
+	
+}
+.services{
+	width:100%;
+	height:auto;
+	padding: 40px 0;
+	background-color:white;
+	
+}
+.service-container{
+	width:80%;
+	margin:0 auto;
+}
+.service-container-head{
+	text-align:center;
+	font-weight: bold;
+	padding: 20px 0;
+	position:relative
+}
+.service-container-head p{
+	font-size:18px;
+	position:relative
+}
+.service-container-head p::after {
+	position: absolute;
+    content: "";
+    border-bottom: 7px solid #0078ff;
+    width: 8%;
+    top: 25px;
+    left: 47%;
+	
+	
+}
+.service-container-head h2{
+	font-size: 3em;
+	
+}
+.service-container-card{
+	width:100%;
+	margin:30px 0;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-evenly;
+}
+.service-card{
+	width:30%;
+	margin: 20px 0;
+	box-shadow: 2px 2px 10px #9e9e9e8c;
+}
+.service-card-icon{
+	padding: 20px 0;
+}
+.service-card-icon i{
+	padding: 20px 0;
+    width: 100px;
+    height: 100px;
+	margin:0 auto;
+    border-radius: 50%;  
+	font-size:30px;
+	color:black;
+	border:6px solid #0078ff;
+	justify-content: center;
+    align-items: center;
+	display:flex;
+	transition: 1s linear;
+}
+.service-card:hover i{
+		border:6px solid #93c6ffed;
+		background-color:#0078ff;
+		color:white;
+}
+.service-card-text{
+	padding: 20px ;
+	text-align:center;
+}
+.service-card-text h3{
+	padding-bottom: 20px ;
+}
+.service-card-text p{
+	
+}
+.service-count-container{
+	width:100%;
+	height:50vh;
+	background-attachment:fixed;
+	background-size:cover;
+	background-image:linear-gradient(#067effa3,#067effa3),url(https://bootstrapmade.com/demo/templates/DevFolio/assets/img/counters-bg.jpg);
+	background-repeat:no-repeat;
+}
+.service-count-content{
+	width:100%;
+	height:50vh;
+	
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	align-items:center;
+	
+}
+.service-count-box{
+	width:20%;
+	color:#fff;
+	
+	text-align:center;
+}
+.service-count-box i{
+	padding: 20px 0;
+    width: 80px;
+    height: 80px;
+	margin:0 auto;
+    border-radius: 50%;
+	font-size:30px;
+	color:#fff;
+	border:8px solid #fff;
+	justify-content: center;
+    align-items: center;
+	display:flex;
+
+}
+.service-count-box h2{
+	padding-top:20px;
+	
+}
+.work-container{
+	width:100%;
+	height:auto;
+	padding-top:50px;
+	margin:0 auto;
+	background:#fff;
+	
+}
+.work-head{
+	text-align:center;
+}
+.work-head h2{
+	font-size:30px;
+	font-weight: 900;
+	
+}
+.work-head p{
+	position: relative;
+	
+}
+.work-head p:after{
+	position: absolute;
+    content: "";
+    border-bottom: 7px solid #0078ff;
+    width: 8%;
+    top: 25px;
+    left: 47%;
+	
+}
+.work-cards{
+	width:90%;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	
+}
+.work-card1{
+	width:30%;
+	margin: 41px 0;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	box-shadow: 0px 3px 1px beige;
+}
+.work-card1-img{
+	width:100%;
+	display: block;
+	overflow:hidden;
+	
+}
+
+.work-card1-img img{
+	width:100%;
+	height:100%;
+	transition:all .5s linear;	
+}
+.work-card1-img img:hover{
+	transform: scale(1.5);
+	
+}
+.work-card1-content {
+	width:70%;
+	padding:20px 0 ;
+	
+}
+.work-card1-content span{
+	color:blue;
+	
+}
+.work-card1-icon{
+	width:20%;
+	
+	justify-content: center;
+    align-items: center;
+	display:flex;
+}
+.work-card1-icon i{
+	 font-size:1.5em;
+	color:#0078ff;
+	margin:0 1em;
+	border:2px solid #0078ff;
+	border-radius:50%;
+	width:1.5em;
+	height:1.5em;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+.work-card1-icon a{
+	text-decoration:none;
+}
+.profile-container{
+	width:100%;
+	height:70vh;
+	background-attachment:fixed;
+	background-size:cover;
+	background-image:linear-gradient(#067effa3,#067effa3),url(https://bootstrapmade.com/demo/templates/DevFolio/assets/img/overlay-bg.jpg);	
+}
+.profile-person{
+	width:90%;
+	height:70vh;
+	margin:0 auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	
+}
+.profile-person-img img{
+	border-radius:50%;
+	
+}
+.profile-person-text{
+	text-align:center;
+	color:white;
+	
+}
+.profile-person-text h2{
+	font-size:2rem;
+	font-weight:bold;
+	padding:20px 0;
+	
+}
+.blog-container{
+	width:90%;
+	height:auto;
+	margin:0 auto;
+
+}
+.blog-head{
+	text-align:center;
+	margin: 50px 0;
+}
+.blog-head h2{
+	font-size:3em;
+}
+.blog-head p{
+	position:relative;
+}
+.blog-head p::after{
+	content:"";
+	position:absolute;
+	border-bottom:5px solid blue;
+	width:3%;
+	bottom:-50%;
+	left:48%;
+}
+.blog-cards{
+	width:100%;
+	margin: 40px 0;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.blog-cards1{
+	width:32%;
+	
+	border:1px solid #d2d2d2;
+
+}	
+.blog-card-img{
+	width:100%;
+	position:relative;
+}
+.blog-card-img-blue {
+	position:absolute;
+	background-color:#0078ff;
+	color:white;
+	right:37.5%;
+	bottom:-2%;
+	width:25%;
+	height:4vh;
+	border-radius:10%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:small;
+	
+}
+.blog-card-img img{
+	width:100%;
+	height:100%;
+	
+}
+.blog-card-text{
+	padding:20px;
+	
+}
+.blog-card-text h3{
+	
+	
+}
+.blog-card-text h3:hover{
+	color:lightblue;
+	cursor:pointer;
+	
+}
+.blog-card-text p{
+	padding:20px 0;
+	font-size:20px;
+	color:#000000ab;
+}
+.blog-card-foot{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	border-top:1px solid #d2d2d2;
+	background-color: #a9a9a938;
+}
+
+.blog-card-foot-img{
+	display:flex;
+	align-items:center;
+	margin-left:15px;
+}
+.blog-card-foot-img img{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+   
+}
+.blog-card-foot-img a{
+	text-decoration:none;	
+}
+.blog-card-foot-img p{
+	color:black;
+	padding:0 5px;
+}
+.blog-card-foot-img p:hover{
+	color:blue;
+}
+.blog-card-foot-text{
+	margin-right:15px;
+	
+}
+.form-container{
+	width:100%;
+	height:110vh;
+	background-attachment:fixed;
+	background-size:cover;
+	margin:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-image:linear-gradient(#067effa3,#067effa3),url(https://bootstrapmade.com/demo/templates/DevFolio/assets/img/overlay-bg.jpg);
+	
+}
+.form-container-content{
+	display:flex;
+	width:80%;
+	height:90vh;
+	margin:auto;
+	background-color:white;
+	font-family:medium;
+	padding:35px;
+	
+	
+}
+.form-formsubject{
+	width:50%;
+
+	
+	
+}
+.form-formsubject-head{
+	
+	
+}
+.form-formsubject-head h1{
+	position:relative;	
+}
+.form-formsubject-head h1::after{
+	content: "";
+    position: absolute;
+    border-bottom: 5px solid blue;
+    width: 20%;
+    bottom: -8px;
+    left: 0;
+}
+form{
+	padding-top:2em;
+}
+form input{
+	width: 90%;
+    height: 3.5em;
+    margin: 1em 0;
+    padding: 10px;
+	
+}
+form textarea{
+	width:90%;
+	margin:1em 0;
+	padding: 10px;
+}
+.button button{
+	margin:auto;
+	padding:15px 50px;
+	background-color:blue;
+	border-radius:3em;
+	border-color:blue;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	cursor:pointer;
+	transition: all 0.5s ease-in-out;
+}
+.button button:hover{
+	border:4px solid rgb(138, 180, 248);
+	color:white;
+	background-color:skyblue;
+}
+.button{
+	margin:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.form-content {
+	width:50%;
+	
+}
+.form-content-head h1 {
+
+	position:relative;
+}
+.form-content-head h1::after{
+	    content: "";
+    position: absolute;
+    border-bottom: 5px solid blue;
+    width: 20%;
+    bottom: -8px;
+    left: 0;
+}
+.form-content-head p {
+	padding: 2em 3em 1.5em 0;
+    line-height: 1.3em;
+    color: #342e2eab;
+    font-family: sans-serif;
+    font-size: 1.1em;
+	
+}
+.form-content-icons{
+	    display: flex;
+    flex-direction: column;
+	
+}
+.form-content-icon1 {
+	padding:10px;
+}
+.form-content-icons i{
+	color:skyblue;
+	
+}
+.form-content-icons span{
+
+	
+}
+.form-content-links{
+		padding:2em 0;
+
+}
+.form-content-links li{
+	display:inline-block;
+	padding-right: 10px;
+	
+}
+.form-content-links i{
+	border:4px solid blue;
+	border-radius:50%;
+	font-size:1em;
+	color:blue;s
+	width:3em;
+	height:3em;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transition: all 0.5s ease-in-out;
+}
+.form-content-links i:hover{
+	border:4px solid rgb(138, 180, 248);
+	color:white;
+	background-color:blue;
+	
+
+}
+.form-content-links a{
+
+	text-decoration:none;
+	
+}
+.footer{
+	text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background: #0062d3;
+	
+}
+.footer-content a{
+	
+	color:white;
+	text-decoration:none;
+	
+}
+.gototop a {
+	font-size:24px;
+	color:#0078ff;
+	position:fixed;
+	bottom:2%;
+	right:2%;
+}
